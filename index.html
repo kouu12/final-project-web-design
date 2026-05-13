@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <b>innerText, innerHTML, textContent Comparison</b>
+    <p id="demo">This paragraph element has excess spacing and has a <span>span element</span> inside.</p>
+    <button onclick="getInnerText()">Get innerText</button>
+    <button onclick="getInnerHTML()">Get innerHTML</button>
+    <button onclick="getTextContent()">Get textContent</button>
+
+    <script>
+        function getInnerText() {
+            alert(document.getElementById("demo").innerText);
+        }
+        function getInnerHTML() {
+            alert(document.getElementById("demo").innerHTML);
+        }
+        function getTextContent() {
+            alert(document.getElementById("demo").textContent);
+        }
+    </script>
+</body>
+</html>
